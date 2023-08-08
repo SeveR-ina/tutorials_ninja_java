@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Linear tests" verbose="1">
+    <test name="ChromeTests">
+        <parameter name="browser" value="Chrome"/>
+        <parameter name="headless" value="false"/>
+        <classes>
+            <class name="tests.LoginTests"/>
+        </classes>
+    </test>
+
+    <test name="FireFoxTests">
+        <parameter name="browser" value="FireFox"/>
+        <parameter name="headless" value="false"/>
+        <classes>
+            <class name="tests.LoginTests"/>
+        </classes>
+    </test>
+</suite>
